@@ -1,0 +1,75 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.josethomas.toolsapp.GetDayFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Spinner
+            android:id="@+id/month_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="30dp"/>
+
+        <Spinner
+            android:id="@+id/day_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/month_spinner"
+            android:layout_alignBottom="@+id/month_spinner" />
+
+        <Spinner
+            android:id="@+id/year_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/day_spinner"
+            android:layout_alignBottom="@+id/day_spinner"
+            android:layout_marginRight="10dp"/>
+
+        <Button
+            android:id="@+id/daySubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Which Day ?"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/month_spinner"/>
+
+        <TextView
+            android:id="@+id/resultantDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/daySubmit"
+            android:text="The day is .... ???"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/resultantDay0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/resultantDay"
+            android:hint=""
+            android:layout_centerHorizontal="true"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textSize="20sp"
+            android:layout_marginTop="75dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/colorResult"
+            android:textStyle="bold"/>
+
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,106 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.josethomas.toolsapp.BMIFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/HLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Height\n(in cms)"
+            android:layout_alignBottom="@+id/height"
+            android:layout_toLeftOf="@+id/height"
+            android:layout_toStartOf="@+id/height"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="15dp"
+            android:textSize="15sp"/>
+        <EditText
+            android:id="@+id/height"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:inputType="numberDecimal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:maxLength="4" />
+
+        <TextView
+            android:id="@+id/WLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weight\n(in Kg)"
+            android:layout_alignBottom="@+id/weight"
+            android:layout_toLeftOf="@+id/weight"
+            android:layout_toStartOf="@+id/weight"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="15dp"
+            android:textSize="15sp"/>
+
+        <EditText
+            android:id="@+id/weight"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint=""
+            android:maxLength="4"
+            android:inputType="numberDecimal"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/height"/>
+
+        <Button
+            android:id="@+id/bmiClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:layout_toRightOf="@+id/bmiSubmit"
+            android:layout_centerHorizontal="true"
+            android:layout_alignBottom="@+id/bmiSubmit"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/bmiSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculate"
+            android:layout_below="@+id/weight"
+           android:layout_marginLeft="80dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bmiSubmit"
+            android:hint="Your Result ???"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/colorResult"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/resultText"
+            android:layout_alignLeft="@+id/WLabel"
+            android:layout_alignStart="@+id/WLabel" />
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</FrameLayout>
